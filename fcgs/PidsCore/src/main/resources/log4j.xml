@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+	<!-- 控制台输出日志 -->
+	<appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%-5p]  %c {%F:%L} - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- 输出日志到文件  文件大小到达指定尺寸的时候产生一个新的文件 -->
+  	<appender name="fileOut" class="org.apache.log4j.RollingFileAppender">
+  		<param name="File" value="/work/mditip/logs/test/test.log" />
+  		<param name="ImmediateFlush" value="true"/>
+  		<param name="Threshold" value="info"></param>
+  		<param name="Append" value="true"></param>
+  		<param name="MaxFileSize" value="50MB"></param>
+  		<param name="MaxBackupIndex" value="100"></param>
+  		<layout class="org.apache.log4j.PatternLayout">
+  			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%-5p]  %c {%F:%L} - %m%n"></param>
+  		</layout>
+  	</appender>
+
+	<logger name="org.springframework">
+		<level value="info" />
+	</logger>
+	<logger name="org.apache.commons">
+		<level value="info" />
+	</logger>
+	<logger name="net.sf.ehcache">
+		<level value="error" />
+	</logger>
+	<logger name="com.fcgs.sys.freemarker">
+		<level value="info" />
+	</logger>
+
+	<logger name="com.fcgs">
+		<level value="info" />
+	</logger>
+	<logger name="org.apache.ibatis">
+		<level value="info" />
+	</logger>
+	<logger name="org.mybatis.spring">
+		<level value="info" />
+	</logger>
+
+	<!-- 打印sql -->
+	<!-- 输出SQL语句 -->
+	<logger name="jdbc.sqlonly" additivity="false">
+		<level value="info"></level>
+		<appender-ref ref="stdout" />
+		<appender-ref ref="fileOut"/>
+	</logger>
+	<!-- 输出SQL执行时间 -->
+	<logger name="jdbc.sqltiming" additivity="false">
+		<level value="error"></level>
+		<appender-ref ref="stdout" />
+		<appender-ref ref="fileOut"/>
+	</logger>
+	<logger name="jdbc.audit" additivity="false">
+		<level value="error"></level>
+		<appender-ref ref="stdout" />
+		<appender-ref ref="fileOut"/>
+	</logger>
+	<!-- 输出SQL执行结果表格 -->
+	<logger name="jdbc.resultsettable" additivity="false">
+		<level value="error"></level>
+		<appender-ref ref="stdout" />
+		<appender-ref ref="fileOut"/>
+	</logger>
+	<!-- 输出SQL执行结果处理信息 -->
+	<logger name="jdbc.resultset" additivity="false">
+		<level value="error"></level>
+		<appender-ref ref="stdout" />
+		<appender-ref ref="fileOut"/>
+	</logger>
+	<!-- 输出数据库连接信息 -->
+	<logger name="jdbc.connection" additivity="false">
+		<level value="error"></level>
+		<appender-ref ref="stdout" />
+		<appender-ref ref="fileOut"/>
+	</logger>
+
+	<root>
+		<priority value="info" />
+		<appender-ref ref="stdout" />
+		<appender-ref ref="fileOut" />
+	</root>
+</log4j:configuration>

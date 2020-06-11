@@ -54,7 +54,7 @@ public class FcgsResultFrame extends javax.swing.JFrame {
         jTable1.setModel(model);
         model.addRow(new String[]{"Data format", gcResults.getTagType()});
         model.addRow(new String[]{"Source fingerprint number", gcResults.getsGeneCount() + ""});
-        model.addRow(new String[]{"Contrast fingerprint number", gcResults.gettGeneCount() + ""});
+        model.addRow(new String[]{"Comparison fingerprint number", gcResults.gettGeneCount() + ""});
 
         Integer minDiff = gcResults.getMinDiff();
         String min = minDiff == null ? "" : minDiff + "";

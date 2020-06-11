@@ -36,8 +36,8 @@ public class FcgsMainFrame extends javax.swing.JFrame {
     public FcgsMainFrame() {
         initComponents();
         this.setLocationRelativeTo(null);//窗口居中
-        this.openDialog = new FileDialog(this, "Open Gene Csv File", FileDialog.LOAD);
-        this.saveDialog = new FileDialog(this, "Save Gene Csv File", FileDialog.SAVE);
+        this.openDialog = new FileDialog(this, "Open Gene CSV File", FileDialog.LOAD);
+        this.saveDialog = new FileDialog(this, "Save Gene CSV File", FileDialog.SAVE);
         try {
             this.setIconImage(ImageIO.read(ClassLoader.getSystemResource("images/title-icon.png")));
         } catch (Exception e) {
@@ -120,7 +120,7 @@ public class FcgsMainFrame extends javax.swing.JFrame {
 
         jLabel3.setText("Source fingerprints CSV");
 
-        jLabel4.setText("Contrast fingerprint CSV");
+        jLabel4.setText("Comparison fingerprint CSV");
 
         jLabel5.setText("Fingerprint CSV template");
 
@@ -270,7 +270,7 @@ public class FcgsMainFrame extends javax.swing.JFrame {
 
         jLabel8.setText("Source fingerprints CSV");
 
-        jLabel9.setText("Contrast fingerprint CSV");
+        jLabel9.setText("Comparison fingerprint CSV");
 
         jLabel10.setText("Fingerprint CSV template");
 
@@ -417,7 +417,7 @@ public class FcgsMainFrame extends javax.swing.JFrame {
 
         jLabel13.setText("Source fingerprints CSV");
 
-        jLabel14.setText("Contrast fingerprint CSV");
+        jLabel14.setText("Comparison fingerprint CSV");
 
         jLabel15.setText("Fingerprint CSV template");
 
@@ -589,7 +589,7 @@ public class FcgsMainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_ssrCsvBtnMouseClicked
 
     private void kaspCsvBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kaspCsvBtnMouseClicked
-        log.info("开始下载SNP KASP数据文件模板....");
+        log.info("开始下载SNP-KASP数据文件模板....");
 
         //保存的模板
         SsrTemplateEnum templateEnum = SsrTemplateEnum.FCGS_KASP_GENE_CSV;
@@ -598,7 +598,7 @@ public class FcgsMainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_kaspCsvBtnMouseClicked
 
     private void chipCsvBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_chipCsvBtnMouseClicked
-        log.info("开始下载SNP Chip数据文件模板....");
+        log.info("开始下载SNP-arrays数据文件模板....");
 
         //保存的模板
         SsrTemplateEnum templateEnum = SsrTemplateEnum.FCGS_CHIP_GENE_CSV;

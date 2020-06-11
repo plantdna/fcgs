@@ -6,9 +6,9 @@ import org.apache.commons.lang3.StringUtils;
  * 标记类型
  */
 public enum TagTypeEnum {
-    MICROSATELLITE("micro", "microsatellite"),
-    KASP("snp-kasp", "snp kasp"),
-    CHIP("snp-arrays", "snp-arrays");
+    MICROSATELLITE("Microsatellite", "Microsatellite"),
+    KASP("SNP-KASP", "SNP-KASP"),
+    CHIP("SNP-arrays", "SNP-arrays");
     public final String tag;
     public final String label;
 

@@ -1,4 +1,4 @@
-Please refer to the FCGS documentation for details：[Directions for use](https://github.com/plantdna/fcgs/blob/master/FCGS%20Instructions.pdf)
+For more information, please refer to the FCGS detailed introduction document: [Instructions](https://github.com/plantdna/fcgs/blob/master/FCGS%20Instructions.pdf)
 
 ## Abstract
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This manual introduces the core functions of the FCGS tool. FCGS provides a Java implementation of the FCGS comparison algorithm, which supports the graphical user interface (GUI) mode and command line calling mode for use of this algorithm. The user can integrate the FCGS algorithm function in their project by selecting the FCGS algorithm function interface in the reference program. The main purpose of this project is to provide the user with an example of the implementation of the FCGS algorithm so that they can better understand the processes and concepts involved with this algorithm.

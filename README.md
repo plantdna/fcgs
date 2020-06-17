@@ -2,7 +2,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This manual introduces the core functions of the FCGS tool. FCGS provides a Java implementation of the FCGS comparison algorithm, which supports the graphical user interface (GUI) mode and command line calling mode for use of this algorithm. The user can integrate the FCGS algorithm function in their project by selecting the FCGS algorithm function interface in the reference program. The main purpose of this project is to provide the user with an example of the implementation of the FCGS algorithm so that they can better understand the processes and concepts involved with this algorithm.
       
 ## Project Download
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project source code address：https://github.com/plantdna/fcgs
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project source code address: https://github.com/plantdna/fcgs
 
 ### Project Structure
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The project directory contains the source code directory fcgs and the directory data for the test data files. The source code directory of the project contains five submodules (FcgsBase, FcgsCore, FcgsService, IPidsCore, and PidsCore) and a main program module fcgs. The five submodules provide some basic interfaces and implementation for the algorithm, while the main program module provides the functional implementation of performing the comparison algorithm through the graphical interface and command line modes. In the “Data” directory, we provide six files, including microsatellite, SNP KASP, and SNP-array marker types of data, each of which provides “Source” and “Target” fingerprint data in CSV file format. The user can use these files for functional testing. The basic directory structure of the fcgs project is as follows:
@@ -34,24 +34,14 @@ plantdna/fcgs
 
 ## GUI Mode
 ### Startup Command
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java –jar fcgs-gui.jar
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java –jar fcgs-gui.jar<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note: If the Java environment variable is set, the user can also double-click the Fcgs-gui. jar package to execute it directly. If the file is set incorrectly, the user can use the command above to open it.
 
 #### Operation Workflow
 #### Main Interface
 
 
-Three types of fingerprint comparison data are supported, as shown in the figure above.
-1. Microsatellite fingerprint data comparison corresponding to the “Microsatellite” page in the figure.
-2. SNP KASP fingerprint data comparison corresponding to the “SNP KASP” page in the figure.
-3. SNP-array fingerprint data comparison corresponding to the “SNP-arrays” page in the figure.
-
-
-
-
-
-
+Three types of fingerprint comparison data are supported, as shown in the figure above.<br>1. Microsatellite fingerprint data comparison corresponding to the “Microsatellite” page in the figure.<br>2. SNP KASP fingerprint data comparison corresponding to the “SNP KASP” page in the figure.<br>3. SNP-array fingerprint data comparison corresponding to the “SNP-arrays” page in the figure.
 
 The fingerprint comparison parameters in the figure above are as follows:
 <table border="1px">
@@ -94,7 +84,7 @@ The parameters of fingerprint comparison results in the figure above are as foll
 
 <table border="1">
     <tr style="background-color: gray">
-        <td width="300"><b>Field</b></td><td><b>Field Description</b></td>
+        <td width="350"><b>Field</b></td><td><b>Field Description</b></td>
     </tr>
     <tr>
         <td>Data format</td><td>Molecular marker data format, including: Microsatellite, SNP-KASP, SNP-arrays</td>

@@ -59,7 +59,7 @@ The fingerprint comparison parameters in the figure above are as follows:
         <td>Parameters</td><td>Parameter Description</td>
     </tr>
     <tr>
-        <td>Minimum number of difference loci</td><td rowspan="2">Used to filter difference loci in results so that only results within a given range are displayed. <br>Parameter values may not be given.</td>
+        <td width="300">Minimum number of difference loci</td><td rowspan="2">Used to filter difference loci in results so that only results within a given range are displayed. <br>Parameter values may not be given.</td>
     </tr>
     <tr>
         <td>Maximum number of difference loci</td>
@@ -94,7 +94,7 @@ The parameters of fingerprint comparison results in the figure above are as foll
 
 <table border="1">
     <tr style="background-color: gray">
-        <td><b>Field</b></td><td><b>Field Description</b></td>
+        <td width="300"><b>Field</b></td><td><b>Field Description</b></td>
     </tr>
     <tr>
         <td>Data format</td><td>Molecular marker data format, including: Microsatellite, SNP-KASP, SNP-arrays</td>
@@ -136,7 +136,7 @@ Description of the comparison result field:<br>
 The parameter types of the command are described as follows:
 <table border="1">
     <tr style="background-color: gray">
-        <td>Parameters</td><td>Parameter Description</td>
+        <td width="300">Parameters</td><td>Parameter Description</td>
     </tr>
     <tr>
         <td ><tt style="background-color: #807f17">* Data format</tt></td><td>Molecular marker data type, optional parameter values: Microsatellite, SNP-KASP, SNP-arrays. (Required)</td>

@@ -116,6 +116,8 @@ The parameters of fingerprint comparison results in the figure above are as foll
 Click on the "Download Result" button to download the comparison result CSV file.<br>
 Description of the comparison result field:<br>
 
+Average comparison time= Total comparison time/Compare result count<br>
+Average time of the difference loci= Average number of difference loci/Total comparison time
 
 ## CMD Mode
 ### Startup Command

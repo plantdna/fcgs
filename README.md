@@ -39,7 +39,7 @@ plantdna/fcgs
 
 #### Operation Workflow
 #### Main Interface
-
+![image](https://github.com/plantdna/fcgs/blob/master/data/Main%20Interface.png)
 
 Three types of fingerprint comparison data are supported, as shown in the figure above.<br>1. Microsatellite fingerprint data comparison corresponding to the “Microsatellite” page in the figure.<br>2. SNP KASP fingerprint data comparison corresponding to the “SNP KASP” page in the figure.<br>3. SNP-array fingerprint data comparison corresponding to the “SNP-arrays” page in the figure.
 
@@ -79,6 +79,7 @@ Instructions for downloading the fingerprint template file:
 Click on the “Download Template” button to download the template to the current tab page belonging to the corresponding molecular marker type format file. For example, the content of the downloaded file template in the figure above is “Microsatellite.” The user must switch to the corresponding tab page to download the corresponding data template. If the data format is inconsistent with the content of the template, then the comparison operation will fail.
 
 #### Comparison Results Interface
+![image](https://github.com/plantdna/fcgs/blob/master/data/Comparison%20Results%20Interface.png)
 
 The parameters of fingerprint comparison results in the figure above are as follows.
 

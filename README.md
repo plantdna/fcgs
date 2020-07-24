@@ -1,3 +1,5 @@
+The license used for our fcgs project is GNU GPLv2 (https://choosealicense.com/licenses/gpl-2.0/).
+
 For more information, please refer to the FCGS detailed introduction document: [Instructions](https://github.com/plantdna/fcgs/blob/master/FCGS%20Instructions.pdf)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to facilitate user to use and test our tools more conveniently, we made two additional JARs and uploaded them to the Github (https://github.com/plantdna/fcgs/tree/master/jar). Two executable files, fcgs-gui. jar and fcgs-cmd. jar, have been added to the Github directory, which were created using the IDEA development tool according to the package method in the user manual. These two packages still need to install the JDK runtime environment before execution. We hope this will help user to use and evaluate our tools more easily. 

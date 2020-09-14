@@ -127,7 +127,7 @@ Average time of the difference loci= Average number of difference loci/Total com
 
 ## CMD Mode
 ### Startup Command
-<font style="background-color: blue">java -jar fcgs-cmd.jar</font> <font style="background-color: #807f17">microsatellite</font> <font style="background-color: #7e0308">snp-kasp-source.csv</font>  <font style="background-color: #7f0f7e">snp-kasp-target.csv</font> <font style="background-color: #11807f">0 40</font> 
+<font style="background-color: blue">java -jar fcgs-cmd.jar</font> <font style="background-color: #807f17">SNP-KASP</font> <font style="background-color: #7e0308">snp-kasp-source.csv</font>  <font style="background-color: #7f0f7e">snp-kasp-target.csv</font> <font style="background-color: #11807f">0 40</font> 
 
 #### The command format
 <font style="background-color: blue">java -jar fcgs-cmd.jar</font> <font style="background-color: #807f17">[Data format]</font> <font style="background-color: #7e0308">[Source fingerprints CSV]</font> </font>  <font style="background-color: #7f0f7e">[Comparison fingerprint CSV]</font> <font style="background-color: #11807f">[Minimum number of difference loci] [Maximum number of difference loci]</font>

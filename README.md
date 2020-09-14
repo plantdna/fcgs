@@ -11,7 +11,7 @@ The license used for our fcgs project is GNU GPLv2 (https://choosealicense.com/l
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project source code address: https://github.com/plantdna/fcgs
 
 ### Project Structure
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The project directory contains the source code directory fcgs and the directory data for the test data files. The source code directory of the project contains five submodules (FcgsBase, FcgsCore, FcgsService, IPidsCore, and PidsCore) and a main program module fcgs. The five submodules provide some basic interfaces and implementation for the algorithm, while the main program module provides the functional implementation of performing the comparison algorithm through the graphical interface and command line modes. In the “Data” directory, we provide six files, including microsatellite, SNP KASP, and SNP-array marker types of data, each of which provides “Source” and “Target” fingerprint data in CSV file format. The user can use these files for functional testing. The basic directory structure of the fcgs project is as follows:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The project directory contains the source code directory fcgs and the directory data for the test data files. The source code directory of the project contains five submodules (FcgsBase, FcgsCore, FcgsService, IPidsCore, and PidsCore) and a main program module fcgs. The five submodules provide some basic interfaces and implementation for the algorithm, while the main program module provides the functional implementation of performing the comparison algorithm through the graphical interface and command line modes. In the “Data” directory, we provide six files, including SNP KASP and SNP-array marker types of data, each of which provides “Source” and “Target” fingerprint data in CSV file format. The user can use these files for functional testing. The basic directory structure of the fcgs project is as follows:
 
 ```
 plantdna/fcgs
@@ -47,7 +47,7 @@ plantdna/fcgs
 #### Main Interface
 ![image](https://github.com/plantdna/fcgs/blob/master/data/Main%20Interface.png)
 
-Three types of fingerprint comparison data are supported, as shown in the figure above.<br>1. Microsatellite fingerprint data comparison corresponding to the “Microsatellite” page in the figure.<br>2. SNP KASP fingerprint data comparison corresponding to the “SNP KASP” page in the figure.<br>3. SNP-array fingerprint data comparison corresponding to the “SNP-arrays” page in the figure.
+Two types of fingerprint comparison data are supported, as shown in the figure above.<br>1. SNP KASP fingerprint data comparison corresponding to the “SNP KASP” page in the figure.<br>2. SNP-array fingerprint data comparison corresponding to the “SNP-arrays” page in the figure.
 
 The fingerprint comparison parameters in the figure above are as follows:
 <table border="1px">
@@ -82,7 +82,7 @@ The fingerprint comparison parameters in the figure above are as follows:
 </table>
 
 Instructions for downloading the fingerprint template file:
-Click on the “Download Template” button to download the template to the current tab page belonging to the corresponding molecular marker type format file. For example, the content of the downloaded file template in the figure above is “Microsatellite.” The user must switch to the corresponding tab page to download the corresponding data template. If the data format is inconsistent with the content of the template, then the comparison operation will fail.
+Click on the “Download Template” button to download the template to the current tab page belonging to the corresponding molecular marker type format file. For example, the content of the downloaded file template in the figure above is “SNP-KASP.” The user must switch to the corresponding tab page to download the corresponding data template. If the data format is inconsistent with the content of the template, then the comparison operation will fail.
 
 #### Comparison Results Interface
 ![image](https://github.com/plantdna/fcgs/blob/master/data/Comparison%20Results%20Interface.png)
@@ -94,7 +94,7 @@ The parameters of fingerprint comparison results in the figure above are as foll
         <td width="350"><b>Field</b></td><td><b>Field Description</b></td>
     </tr>
     <tr>
-        <td>Data format</td><td>Molecular marker data format, including: Microsatellite, SNP-KASP, SNP-arrays</td>
+        <td>Data format</td><td>Molecular marker data format, including: SNP-KASP, SNP-arrays</td>
     </tr>
     <tr>
         <td>Source fingerprint number</td><td>The number of fingerprints to be compared in CSV file</td>
@@ -127,7 +127,7 @@ Average time of the difference loci= Average number of difference loci/Total com
 
 ## CMD Mode
 ### Startup Command
-<font style="background-color: blue">java -jar fcgs-cmd.jar</font> <font style="background-color: #807f17">microsatellite</font> <font style="background-color: #7e0308">microsatellite-source.csv</font>  <font style="background-color: #7f0f7e">microsatellite-target.csv</font> <font style="background-color: #11807f">0 40</font> 
+<font style="background-color: blue">java -jar fcgs-cmd.jar</font> <font style="background-color: #807f17">microsatellite</font> <font style="background-color: #7e0308">snp-kasp-source.csv</font>  <font style="background-color: #7f0f7e">snp-kasp-target.csv</font> <font style="background-color: #11807f">0 40</font> 
 
 #### The command format
 <font style="background-color: blue">java -jar fcgs-cmd.jar</font> <font style="background-color: #807f17">[Data format]</font> <font style="background-color: #7e0308">[Source fingerprints CSV]</font> </font>  <font style="background-color: #7f0f7e">[Comparison fingerprint CSV]</font> <font style="background-color: #11807f">[Minimum number of difference loci] [Maximum number of difference loci]</font>
@@ -138,7 +138,7 @@ The parameter types of the command are described as follows:
         <td width="300">Parameters</td><td>Parameter Description</td>
     </tr>
     <tr>
-        <td ><tt style="background-color: #807f17">* Data format</tt></td><td>Molecular marker data type, optional parameter values: Microsatellite, SNP-KASP, SNP-arrays. (Required)</td>
+        <td ><tt style="background-color: #807f17">* Data format</tt></td><td>Molecular marker data type, optional parameter values: SNP-KASP, SNP-arrays. (Required)</td>
     </tr>
     <tr>
         <td><tt style="background-color: #7e0308">* Source fingerprints CSV</tt></td><td>The path of the comparison fingerprint CSV file. (Required)</td>

@@ -16,7 +16,7 @@
         <poi-version>3.10-FINAL</poi-version>
         <junit-version>4.11</junit-version>
         <rxtx-version>2.1.7</rxtx-version>
-        <ant-version>1.9.3</ant-version>
+        <ant-version>1.10.9</ant-version>
         <joda-time-version>2.3</joda-time-version>
         <commons-io-version>2.4</commons-io-version>
     </properties>

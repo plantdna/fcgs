@@ -102,7 +102,7 @@ public class FcgsMainFrame extends javax.swing.JFrame {
         setTitle("FCGS algorithm");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        /*jLabel1.setText("Minimum number of difference loci");
+        jLabel1.setText("Minimum number of difference loci");
 
         ssrMinDiff.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -250,7 +250,7 @@ public class FcgsMainFrame extends javax.swing.JFrame {
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Microsatellite", jPanel1);*/
+        jTabbedPane1.addTab("Microsatellite", jPanel1);
 
         jLabel6.setText("Minimum number of difference loci");
 

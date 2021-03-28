@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
  */
 
 public class MarkerStrParser extends ListParserTemplate<String, Marker> {
-    private static String pattern = "^([0-9]+)/([0-9]+)$";
+    private static String pattern = "^([0-9]+)[/\\-]{0,2}([0-9]+)$";
     private static Pattern markerPattern = Pattern.compile(pattern);
 
     @Override

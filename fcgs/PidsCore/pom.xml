@@ -18,7 +18,7 @@
         <rxtx-version>2.1.7</rxtx-version>
         <ant-version>1.9.3</ant-version>
         <joda-time-version>2.3</joda-time-version>
-        <commons-io-version>2.4</commons-io-version>
+        <commons-io-version>2.7</commons-io-version>
     </properties>
 
     <dependencies>
